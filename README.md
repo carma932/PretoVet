@@ -57,3 +57,176 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+# 🐾 PretoVet - Sistema de Gestión Veterinaria
+
+Repositorio principal del proyecto **PretoVet**. Todo el código fuente, actualizaciones y mejoras deben gestionarse mediante GitHub para mantener el proyecto sincronizado y evitar versiones desactualizadas.
+
+---
+
+## 📩 Permisos de colaborador
+
+Si GitHub muestra errores como `Permission denied` o no permite realizar `push`:
+
+1. Pasar tu correo de GitHub al administrador del proyecto.
+2. Aceptar la invitación de colaborador desde GitHub o desde tu correo electrónico.
+3. Volver a intentar el `push`.
+
+---
+
+## 📥 Clonar el proyecto (solo la primera vez)
+
+Abrir Git Bash dentro de:
+
+```bash
+C:/xampp/htdocs/
+```
+
+Ejecutar:
+
+```bash
+git clone https://github.com/carma932/PretoVet.git
+cd PretoVet
+```
+
+---
+
+## 🔄 Flujo de trabajo
+
+### 1. Actualizar el proyecto antes de trabajar
+
+```bash
+git pull origin main
+```
+
+---
+
+### 2. Guardar cambios
+
+```bash
+git add .
+git commit -m "Descripción clara del cambio"
+```
+
+Ejemplos:
+
+```bash
+git commit -m "Fix: corregido registro de mascotas"
+git commit -m "Feat: agregado módulo de citas veterinarias"
+git commit -m "Feat: agregado historial médico"
+git commit -m "Fix: corregida validación de usuarios"
+```
+
+---
+
+### 3. Subir cambios
+
+```bash
+git push origin main
+```
+
+---
+
+## 🗄️ Base de datos
+
+Los archivos SQL del proyecto se encuentran dentro de:
+
+```bash
+/database
+```
+
+Si existe una actualización de la base de datos:
+
+1. Ejecutar:
+
+```bash
+git pull origin main
+```
+
+2. Importar nuevamente el archivo `.sql` actualizado en PHPMyAdmin.
+
+---
+
+## 🐶 Funcionalidades principales
+
+* Gestión de usuarios.
+* Registro de mascotas.
+* Historial médico veterinario.
+* Gestión de citas.
+* Gestión de productos.
+* Reserva de productos.
+* Recetas veterinarias.
+* Administración de tipos de pago.
+* Panel administrativo.
+
+---
+
+## ⚠️ Recomendaciones
+
+* No enviar archivos `.zip`.
+* Realizar siempre `git pull` antes de comenzar a programar.
+* Utilizar mensajes claros y descriptivos en los commits.
+* No subir archivos de configuración personales (`.env`).
+* Verificar que el proyecto funcione antes de realizar `push`.
+
+Si aparece un conflicto al hacer `push`, ejecutar:
+
+```bash
+git pull origin main
+```
+
+Resolver los conflictos si existen y luego volver a ejecutar:
+
+```bash
+git push origin main
+```
+
+---
+
+## 🚀 Comandos rápidos
+
+### Actualizar proyecto
+
+```bash
+git pull origin main
+```
+
+### Guardar cambios
+
+```bash
+git add .
+git commit -m "Descripción del cambio"
+```
+
+### Subir cambios
+
+```bash
+git push origin main
+```
+
+---
+
+## 👨‍💻 Tecnologías utilizadas
+
+* PHP 8+
+* Laravel
+* Livewire
+* MySQL
+* Blade
+* Tailwind CSS
+* JavaScript
+* Git y GitHub
+
+---
+
+## 📌 Repositorio oficial
+
+```bash
+https://github.com/carma932/PretoVet.git
+```
+
+Mantener siempre el proyecto actualizado desde este repositorio para evitar pérdida de cambios o conflictos entre versiones.
+
