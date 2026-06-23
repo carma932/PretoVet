@@ -6,10 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mascotas extends Model
 {
-    //Relacion de muchos a uno 
-    //hasOne es de uno a uno 
+    protected $fillable = [
+        'codigo', 'nombre', 'especie', 'raza', 'sexo',
+        'fecha_nacimiento', 'color', 'peso',
+        'condiciones_especiales', 'estado', 'user_id',
+    ];
+
     public function user(){
         return $this->belongsTo(User::class);
     }
-  
 }
