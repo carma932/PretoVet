@@ -4,13 +4,20 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Reserva_productos extends Model
+class ReservaProducto extends Model
 {
-    public function user(){
+    protected $fillable = [
+        'user_id',
+        'producto_id'
+    ];
+
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 
-    public function producto(){
-        return $this->belongsTo(Productos::class);
+    public function producto()
+    {
+        return $this->belongsTo(Producto::class);
     }
 }

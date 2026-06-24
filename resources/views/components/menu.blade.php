@@ -28,7 +28,7 @@
     <span>Inicio</span>
 </a>
 
-<a href="#"
+<a href="{{ route('productos.index') }}"
    class="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">
     <i class="fa-solid fa-store"></i>
     <span>Tienda</span>
@@ -40,7 +40,7 @@
     <span>Mis Mascotas</span>
 </a>
 
-<a href="#"
+<a href="{{ route('citas.index') }}"
    class="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">
     <i class="fa-solid fa-calendar-check"></i>
     <span>Mis Citas</span>

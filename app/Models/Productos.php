@@ -6,7 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Productos extends Model
 {
-    public function reserva_productos(){
-        return $this->hasMany(Reserva_productos::class);
+    protected $fillable = [
+        'codigo',
+        'name',
+        'tipo',
+        'stock',
+        'precio',
+        'estado'
+    ];
+
+    public function reservaProductos()
+    {
+        return $this->hasMany(ReservaProducto::class);
     }
 }
